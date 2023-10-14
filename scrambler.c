@@ -26,7 +26,9 @@ int main(int argc, char* argv[]) {
 	}
 
 	// TODO command line error checking
-
+	if (argc != 4){
+		fprintf(stderr, "usage: %s <-s|-u>")
+	}
 	// This suppresses warnings; TODO remove after you use these variables
 	(void) scramble;
 	(void) unscramble;
